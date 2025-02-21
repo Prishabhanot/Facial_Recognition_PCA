@@ -8,7 +8,7 @@ This project implements a face recognition system using Principal Component Anal
 
 Reduced feature dimensions from 4096 to 200 while retaining significant variance. Achieved a classification precision score of 97%, recall of 96%, and F1-score of 96%. PCA efficiently finds a lower-dimensional space that preserves key facial variations for classification.
 
-![EigenFaces](C:\Users\bhanop1\Desktop\Code\Facial_Recognition_PCA\Facial_Rec.png)
+![EigenFaces](Facial_Recognition_PCA\Facial_Rec.png)
 
 ## Requirements
 
