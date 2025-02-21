@@ -44,7 +44,7 @@ def show_eigenfaces(pca):
 	    ax.set_title("PC " + str(i+1))
 	plt.show()
      
-#show_eigenfaces(pca)
+show_eigenfaces(pca)
 #Give us a sense about which direction we have the maximum variation of data
 
 #Project Training data to PCA 
