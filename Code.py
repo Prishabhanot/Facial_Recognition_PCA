@@ -46,3 +46,11 @@ def show_eigenfaces(pca):
      
 show_eigenfaces(pca)
 #Give us a sense about which direction we have the maximum variation of data
+
+#Project Training data to PCA 
+x_train_pca = pca.transform(x_train)
+
+#Initialize Classifer and fir training data
+clf = SVC(kernel='rbf',C=1000,gamma=0.01)
+clf=clf.fit(x_train_pca,y_train)
+#
