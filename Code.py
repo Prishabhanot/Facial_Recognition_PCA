@@ -25,3 +25,6 @@ def show_orginal_images(pixels):
     plt.show()
 
 show_orginal_images(pixel)
+
+#Step 2: Split Dataset into training and testing
+x_train, x_test, y_train, y_test = train_test_split(pixel,labels)
