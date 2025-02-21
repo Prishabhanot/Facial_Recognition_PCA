@@ -34,5 +34,7 @@ x_train, x_test, y_train, y_test = train_test_split(pixel,labels)
 pca = PCA(n_compnents=200).fit(x_train)
 
 #plotting amount of variance by each component
+plt.plt(pca.explained_variance_ratio_)
+plt.show()
 
 
