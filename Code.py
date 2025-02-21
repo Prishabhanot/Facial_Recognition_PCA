@@ -26,5 +26,13 @@ def show_orginal_images(pixels):
 
 show_orginal_images(pixel)
 
-#Step 2: Split Dataset into training and testing
+#Split Dataset into training and testing
 x_train, x_test, y_train, y_test = train_test_split(pixel,labels)
+#x_train and y_train will have features while x_test and y_test will have targets 
+
+#Perform PCA
+pca = PCA(n_compnents=200).fit(x_train)
+
+#plotting amount of variance by each component
+
+
