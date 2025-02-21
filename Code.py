@@ -11,4 +11,17 @@ from sklearn.svm import SVC
 
 #Reading Dataset and visualize it 
 df = pd.read_csv("face_data.csv")
-print(df.head())
+#print(df.head())
+
+labels = df["target"]
+pixel = df.drop(["target"], axis=1)
+
+def show_orginal_images(pixels):
+    #Displaying Original Images
+    fig, axes = plt.subplots(6,10,figsize=(11,7),
+                             subplot_kw=('xticks':[], 'yticks':[])})
+    for i, ax in enumerate(axes.flat):
+        ax.imshow(np.array(pizels)[i].reshape(64,64), cmap='gray')
+    plt.show()
+
+show_orginal_images(pixel)
