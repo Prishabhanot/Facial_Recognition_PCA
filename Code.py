@@ -43,4 +43,6 @@ def show_eigenfaces(pca):
 	    ax.imshow(pca.components_[i].reshape(64, 64), cmap='gray')
 	    ax.set_title("PC " + str(i+1))
 	plt.show()
-
+     
+show_eigenfaces(pca)
+#Give us a sense about which direction we have the maximum variation of data
