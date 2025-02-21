@@ -8,3 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.decomposition import PCA 
 from sklearn.svm import SVC 
+
+#Reading Dataset and visualize it 
+df = pd.read_csv("face_data.csv")
+print(df.head())
