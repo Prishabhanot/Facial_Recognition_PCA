@@ -61,4 +61,7 @@ y_pred = clf.predict(x_test_pca)
 
 print (classification_report(y_test,y_pred))
 #Went down from 4096 features to 135 features
-#precision score = 98, recall = 98, f1-score = 98
+#precision score = 97, recall = 96, f1-score = 96
+
+#There exists a lower dimensional space which can more efficently represent a dataset (closely)
+#PCA finds such low-dimensioanl projections that maximally preserve variance in the data 
