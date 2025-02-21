@@ -44,13 +44,21 @@ def show_eigenfaces(pca):
 	    ax.set_title("PC " + str(i+1))
 	plt.show()
      
-show_eigenfaces(pca)
+#show_eigenfaces(pca)
 #Give us a sense about which direction we have the maximum variation of data
 
 #Project Training data to PCA 
 x_train_pca = pca.transform(x_train)
 
-#Initialize Classifer and fir training data
+#Initialize Classifer and fit training data
 clf = SVC(kernel='rbf',C=1000,gamma=0.01)
 clf=clf.fit(x_train_pca,y_train)
-#
+
+#Perform testing and get classifiction report 
+x_test_pca=pca.transform(x_test)
+
+y_pred = clf.predict(x_test_pca)
+
+print (classification_report(y_test,y_pred))
+#Went down from 4096 features to 135 features
+#precision score = 98, recall = 98, f1-score = 98
